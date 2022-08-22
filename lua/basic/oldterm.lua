@@ -1,0 +1,36 @@
+-- local terminalbuffer = nil
+-- local terminalwinid = nil
+-- 
+-- local v = vim
+-- local fun = v.fn
+-- local cmd = v.api.nvim_command
+-- local gotoid = fun.win_gotoid
+-- local getid = fun.win_getid
+-- 
+-- local function openTerminal()
+--     if fun.bufexists(terminalbuffer) ~= gotoid(getid()) then
+--         cmd("sp | winc J | res 10 | te")
+--         terminalwinid = getid()
+--         terminalbuffer = fun.bufnr('%')
+--     elseif gotoid(getid()) ~= gotoid(terminalwinid) then
+--         cmd("sb " .. terminalbuffer .. "| winc J | res 10 ")
+--         terminalwinid = getid()
+--     end
+--     cmd("startinsert")
+-- end
+-- 
+-- local function hideTerminal()
+--     if gotoid(getid()) == gotoid(terminalwinid) then
+--         cmd("hide")
+--     end
+-- end
+-- 
+-- function ToggleTerminal()
+--     if gotoid(getid()) == gotoid(terminalwinid) then
+--         hideTerminal()
+--     else
+--         openTerminal()
+--     end
+-- end
+
+
