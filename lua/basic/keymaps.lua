@@ -13,12 +13,12 @@ k('n', "<C-k>", "<C-w>k")
 k('n', "<C-l>", "<C-w>l")
 
 -- dump pair
-k('i', '(<space>', '()<left>')
-k('i', '{<space>', '{}<left>')
-k('i', '[<space>', '[]<left>')
-k('i', '<<space>', '<><left>')
-k('i', '"<space>', '""<left>')
-k('i', "'<space>", "''<left>")
+-- k('i', '(<space>', '()<left>')
+-- k('i', '{<space>', '{}<left>')
+-- k('i', '[<space>', '[]<left>')
+-- k('i', '<<space>', '<><left>')
+-- k('i', '"<space>', '""<left>')
+-- k('i', "'<space>", "''<left>")
 
 -- disable keybind
 k('i', '<C-n>', '<nop>')

@@ -13,7 +13,11 @@ o.history = 10000
 o.swapfile = false
 o.autoindent = true
 o.smartindent = true
-o.expandtab = true
+o.smarttab = true
+-- o.ai = true
+-- o.expandtab = true
+-- o.si = true
+o.backspace = 'start,eol,indent'
 o.laststatus = 3
 o.spr = true
 o.sb = true
@@ -22,15 +26,11 @@ o.shiftwidth = 4
 o.tabstop = 4
 o.softtabstop = 4
 o.showcmd = true
---o.backup = false -- not sure
 o.shell = 'zsh' -- not sure
 o.inccommand = 'split'
-o.smarttab = true
-o.ai = true
-o.si = true
+--o.backup = false -- not sure
 o.clipboard = 'unnamedplus'
 o.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
-o.backspace = 'start,eol,indent'
 o.path:append { '**' } -- finding files - search down into subfolders
 
 -- transparent wildmenu and popups
