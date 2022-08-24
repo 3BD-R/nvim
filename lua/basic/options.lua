@@ -1,7 +1,6 @@
 local o = vim.opt
 
 o.wildmenu = false
-o.completeopt = 'menu,menuone,noselect' -- better autocompletion experience
 o.mouse = 'a'
 o.termguicolors = true
 o.wrap = false

@@ -19,7 +19,7 @@ k('n', "<C-l>", "<C-w>l")
 -- k('i', '<<space>', '<><left>')
 -- k('i', '"<space>', '""<left>')
 -- k('i', "'<space>", "''<left>")
-
+--k('n', '<space>r', vim.lsp.buf.rename)
 -- disable keybind
 k('i', '<C-n>', '<nop>')
 k('i', '<C-p>', '<nop>')
