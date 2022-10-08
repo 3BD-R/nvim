@@ -48,7 +48,8 @@ cmp.setup({
 	-- Format the autocomplete menu
 	formatting = {
 		format = function(entry, vim_item)
-			vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
+			vim_item.kind = string.format('%s', vim_item.kind)
+			--vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind)
 			return vim_item
 		end
 		--	},
@@ -98,8 +99,9 @@ cmp.setup({
 		{ name = 'nvim_lua' },
 		{ name = 'nvim_lsp' },
 		{ name = 'luasnip' },
-		{ name = 'cmdline' },
+--		{ name = 'cmdline' }, -- this was the issue
 		{ name = 'path' },
+		{ name = "spell" },
 		-- { name = "look",
 		--     keyword_length = 2,
 		--     option = {
@@ -108,7 +110,6 @@ cmp.setup({
 		--     }
 		-- },
 		-- { name = "calc" },
-		-- { name = "spell" },
 		-- { name = "emoji" }
 	}, {
 		{ name = 'buffer' },
